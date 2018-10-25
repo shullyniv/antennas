@@ -1,0 +1,54 @@
+<!-- <span class="fa fa-ambulance"></span> -->
+<!-- <div class="wrap row"> -->
+<!-- <input type="button" class="x" (click)="cancel()" value="x" /> -->
+
+<!-- <form id="bigDiv" class="form-group" #UserModelForm (ngSubmit)="OnSubmit()">
+       -->
+<div class="wrapDiv">
+    <form [formGroup]="userform" (ngSubmit)="onSubmit()">
+        <p-panel header="Validate">
+            <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid" style="margin: 10px 0px">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-col-4">
+                        Mail *:
+                    </div>
+                    <div class="ui-grid-col-8">
+                        <input pTooltip="Enter your mail" [(ngModel)]="myuser.Email" pInputText type="text" formControlName="mail" placeholder="Required" />
+                    </div>
+                </div>
+                <br *ngIf="userform.controls['mail'].valid||!userform.controls['mail'].dirty">
+                <!-- <br *ngIf="userform.controls['mail'].valid||!userform.controls['mail'].dirty"> -->
+                <div class="ui-grid-row">
+                    <p-message severity="error" [text]="userform.controls['mail'].errors['required'] ?'mail is required':'not valid eMail address'" *ngIf="!userform.controls['mail'].valid&&userform.controls['mail'].dirty"></p-message>
+                </div>
+                <div class="ui-grid-row">
+                    <div class="ui-grid-col-4">
+                        Password *:
+                    </div>
+                    <div class="ui-grid-col-8">
+                        <input  pTooltip="Enter your password" [(ngModel)]="myuser.password"type="password" formControlName="password" placeholder="Required - Min(6)" />
+                    </div>
+
+                </div>
+                <br *ngIf="userform.controls['password'].valid||!userform.controls['password'].dirty">
+                <!-- <br *ngIf="userform.controls['password'].valid||!userform.controls['password'].dirty"> -->
+                <div class="ui-grid-row">
+                    <p-message severity="error" [text]="userform.controls['password'].errors['required'] ? 'Password is required' : userform.controls['password'].errors['minlength'] ? 'Must be longer than 6 characters' : ''"
+                        *ngIf="!userform.controls['password'].valid&&userform.controls['password'].dirty"></p-message>
+                </div>
+                <div class="ui-grid-row">
+                    <div class="ui-grid-col-4"></div>
+                    <div class="ui-grid-col-6">
+                        <button pButton type="submit" label="Login" [disabled]="!userform.valid"></button>
+                    </div>
+                    <div class="ui-grid-col-4"></div>
+                </div>
+                <div class="ui-grid-row" *ngIf="showError">
+                    <p-message severity="error" text="mail or password not correct"></p-message>
+                </div>
+            </div>
+        </p-panel>
+    </form>
+</div>
+<!-- </div> -->
+<!-- <div class="wrap-div"></div> -->

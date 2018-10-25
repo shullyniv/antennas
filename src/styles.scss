@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+// .container{
+//     height: 10% !important;
+//     width: 40% !important;
+// margin-left: 0 !important;}
+// p{
+//     font-size: 100px;
+// }
+body{
+    overflow-x: hidden;
+}
+body .ui-dialog .ui-dialog-content{
+    overflow-x: hidden
+}
+// .ui-dialog{
+
+//     width: 30% !important;
+// }
+p-progressSpinner{ position: absolute;
+    z-index: 100000;
+/* align-content: center; */
+/* margin: auto; */
+/* width: 50%; */
+/* border: 3px solid green; */
+/* padding: 10px; */
+text-align: center;
+left: 45%;
+top: 45%;}

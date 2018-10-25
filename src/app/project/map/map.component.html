@@ -1,0 +1,21 @@
+<div class="container">
+
+    <div class="form-group">
+        <input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control"
+            #search [formControl]="searchControl" />
+    </div>
+    <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom" #map>
+        <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+    </agm-map>
+    <div *ngIf="loading" class="load-wrapp">
+            <div class="load-1">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj_YflnC50-74abdppmv8MpRjuRJpiMvM&libraries=places&callback=initAutocomplete"
+    async defer>
+    </script>

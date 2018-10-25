@@ -1,0 +1,40 @@
+<div class="row wrap">
+  <div class="col-md-4 statistics">
+      <a class="glyphicon glyphicon-off" (click)="logOut()" routerLink=""routerLinkActive="active" style="float:left">Logout</a>
+    <div class="row nav">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <span class="fa fa-bar-chart-o" style="    font-size: 300%;"></span>
+        <br>
+        <a [routerLink]="['/Home/Statistics']" routerLinkActive="active">Statistics</a>
+        <p>Here you can see which company was chosen the most times</p>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+  <div class="col-md-4 adress">
+    <div class="row nav">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+          <span class="fa fa-line-chart" style="    font-size: 300%;"></span>
+          <br>
+        <a [routerLink]="['/Home/Address']" routerLinkActive="active">Best Company</a>
+        <p>Here you can choose addreses and see which company is the best for you! </p>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+    <div class="col-md-4 about">
+      <div class="row  nav">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <span class="fa fa-heart" style="    font-size: 300%;"></span>
+            <br>
+          <a routerLink="['/Home/About']" routerLinkActive="active">About</a>
+          <p>Here you can see every what you wanted to know about us.</p>
+        </div>
+        <div class="col-md-3"></div>
+    
+    </div>
+  </div>
+</div>

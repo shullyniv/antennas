@@ -1,0 +1,28 @@
+
+body {
+    height: 95vh;
+    overflow-x:hidden;
+}
+.diagram{
+    overflow: auto;
+}
+.btn{
+   background-color: #6e7cdc !important;
+}
+.legend{
+    position: absolute;
+    top:15%;
+    margin-bottom: 100px;
+}
+.cellcom{
+color: purple;
+}
+.pelephone{
+    color: blue;
+    }.golan{
+        color: pink;
+        }.hot{
+            color: red;
+            }.partner{
+                color: orange;
+                }

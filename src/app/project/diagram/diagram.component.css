@@ -1,0 +1,19 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+canvas{
+    height: 50% !important;
+    width: 80% !important;
+}
+p{
+    font-size: 100px;
+}
+label{
+    height: 100%;
+    width: 100%
+}
+.md-form label {
+    font-size: 1000px;
+    position: absolute;
+}    

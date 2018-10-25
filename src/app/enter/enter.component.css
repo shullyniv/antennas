@@ -1,0 +1,27 @@
+.col-md-6{
+    font-size: 143%;    
+}
+.wrap{
+    height: 100vh;
+}
+.col-md-4{
+    text-align: center
+}
+/* a{
+    top: 70%;
+    position: absolute;
+    right: 44%;
+} */
+.statistics{
+    background-color: #addbe6;
+}
+.adress{
+    background-color: #fec010;
+}
+.about{
+    background-color: #16b2c0;
+}
+.nav{
+    position: absolute;
+    top: 50%;
+}

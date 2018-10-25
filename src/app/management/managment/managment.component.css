@@ -1,0 +1,58 @@
+.img{
+    left: 415px;
+    /* right: 5px; */
+    position: absolute;
+    width: 237px;
+    top: 5px;
+    /* background-image: url("../../../assets/images/antenna.png"); */
+}
+a{
+    margin: 25px;
+    font-size: 300%;
+}
+nav{
+    /* position: absolute;
+    left: 36%;
+    top: 36%; */
+}
+.header{
+    top: 32%;
+    /* left: 38.5%; */
+    position: absolute;
+}
+h1{
+    /* position: absolute; */
+    font-size: 800%;
+    /* bottom: -35px; */
+}
+.wrap-div{
+    background-image: url("../../../assets/images/home.gif");
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    left: 30%;
+}
+.div-1
+    
+{
+    height: 43.5%;
+    width: 100%;
+    position: absolute;
+    background-color: #33b5e569;
+    z-index: -1;
+}
+.visible{
+    background-color: black;
+    opacity: 0.5;
+}
+p-progressSpinner{ position: absolute;
+    z-index: 100000;
+/* align-content: center; */
+/* margin: auto; */
+/* width: 50%; */
+/* border: 3px solid green; */
+/* padding: 10px; */
+text-align: center;
+left: 45%;
+top: 45%;}
